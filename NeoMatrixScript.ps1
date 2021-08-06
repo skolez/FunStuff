@@ -32,6 +32,7 @@ Function Write-Matrix {
     cmd /c color 0a
 
     #later I'll probably pull the following from a text document rather than enter it in manually as below
+    #this also pulls the username to add into the script
     Write-Matrix "Wake up, $env:USERNAME..." 35 5
     Write-Matrix "The Matrix has you..." 200 5
     Write-Matrix "Follow the white rabbit..." 35 5
@@ -43,7 +44,7 @@ Function Write-Matrix {
     cmd /c color 5f
     Exit
     Exit
-    <#to try later
+    <#to try later I'd like to add the ability to expand the console window to full screen and possibly remove the slider bar as well to emulate a black screen
     [void] [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.VisualBasic")
     [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
  
